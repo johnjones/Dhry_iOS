@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,82 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="#Runs" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mkl-cD-0jn">
+                                <rect key="frame" x="16" y="28" width="514" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="511" id="wIV-Fa-bj3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="go"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wIV-Fa-bj3"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo7-Ho-4rk">
+                                <rect key="frame" x="538" y="28" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="fxi-cP-Enh"/>
+                                </constraints>
+                                <state key="normal" title="Run">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="runPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="125-8F-mEt"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqC-7u-cMr">
+                                <rect key="frame" x="16" y="66" width="568" height="519"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oo7-Ho-4rk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0IJ-q0-a5N"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="baseline" secondItem="Oo7-Ho-4rk" secondAttribute="baseline" id="1hO-KI-ceN"/>
+                            <constraint firstItem="Oo7-Ho-4rk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Fd-Y9-v2v"/>
+                            <constraint firstItem="Oo7-Ho-4rk" firstAttribute="leading" secondItem="mkl-cD-0jn" secondAttribute="trailing" constant="8" id="5as-tM-hMw"/>
+                            <constraint firstItem="Oo7-Ho-4rk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Bnn-ff-LIL"/>
+                            <constraint firstAttribute="centerX" secondItem="mkl-cD-0jn" secondAttribute="centerX" id="EEe-W2-MWe"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="baseline" secondItem="Oo7-Ho-4rk" secondAttribute="baseline" id="HFH-9K-Ykf"/>
+                            <constraint firstAttribute="bottom" secondItem="PqC-7u-cMr" secondAttribute="bottom" id="PTw-Sh-uaC"/>
+                            <constraint firstItem="Oo7-Ho-4rk" firstAttribute="leading" secondItem="mkl-cD-0jn" secondAttribute="trailing" constant="8" id="TTs-ah-i82"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UBL-sN-ade"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VZC-1x-2eM"/>
+                            <constraint firstItem="Oo7-Ho-4rk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Xsq-FR-8kQ"/>
+                            <constraint firstItem="PqC-7u-cMr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yqj-Kb-s1I"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="b6E-xv-dxd"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eWW-T4-lX1"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="fyK-JI-TYx"/>
+                            <constraint firstAttribute="trailing" secondItem="PqC-7u-cMr" secondAttribute="trailing" id="iLz-cu-EZ0"/>
+                            <constraint firstAttribute="centerY" secondItem="mkl-cD-0jn" secondAttribute="centerY" id="wbt-Tp-pBq"/>
+                            <constraint firstItem="PqC-7u-cMr" firstAttribute="top" secondItem="mkl-cD-0jn" secondAttribute="bottom" constant="8" id="xdv-IG-coI"/>
+                            <constraint firstItem="mkl-cD-0jn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zWt-Aq-DPg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EEe-W2-MWe"/>
+                                <exclude reference="HFH-9K-Ykf"/>
+                                <exclude reference="UBL-sN-ade"/>
+                                <exclude reference="b6E-xv-dxd"/>
+                                <exclude reference="eWW-T4-lX1"/>
+                                <exclude reference="fyK-JI-TYx"/>
+                                <exclude reference="wbt-Tp-pBq"/>
+                                <exclude reference="zWt-Aq-DPg"/>
+                                <exclude reference="0IJ-q0-a5N"/>
+                                <exclude reference="5as-tM-hMw"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="nrunsField" destination="mkl-cD-0jn" id="kEx-rX-Kxy"/>
+                        <outlet property="resView" destination="PqC-7u-cMr" id="4ed-dC-DKm"/>
+                        <outlet property="runButton" destination="Oo7-Ho-4rk" id="y7g-eZ-14k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

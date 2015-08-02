@@ -7,26 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2B3DCD1B6DBFC000A7B169 /* dhry21a.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B2B3DCA1B6DBFC000A7B169 /* dhry21a.c */; };
+		5B2B3DCE1B6DBFC000A7B169 /* dhry21b.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B2B3DCB1B6DBFC000A7B169 /* dhry21b.c */; };
+		5B2B3DCF1B6DBFC000A7B169 /* timers.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B2B3DCC1B6DBFC000A7B169 /* timers.c */; };
 		5BDBFAD91B6072DB00FCBF87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBFAD81B6072DB00FCBF87 /* main.m */; };
 		5BDBFADC1B6072DB00FCBF87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBFADB1B6072DB00FCBF87 /* AppDelegate.m */; };
 		5BDBFADF1B6072DB00FCBF87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBFADE1B6072DB00FCBF87 /* ViewController.m */; };
 		5BDBFAE21B6072DB00FCBF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDBFAE01B6072DB00FCBF87 /* Main.storyboard */; };
 		5BDBFAE41B6072DB00FCBF87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDBFAE31B6072DB00FCBF87 /* Images.xcassets */; };
-		5BDBFAE71B6072DB00FCBF87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDBFAE51B6072DB00FCBF87 /* LaunchScreen.xib */; };
-		5BDBFAF31B6072DB00FCBF87 /* DhrystoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBFAF21B6072DB00FCBF87 /* DhrystoneTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5BDBFAED1B6072DB00FCBF87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BDBFACB1B6072DB00FCBF87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BDBFAD21B6072DB00FCBF87;
-			remoteInfo = Dhrystone;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		5B2B3DC91B6DBFC000A7B169 /* dhry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhry.h; sourceTree = "<group>"; };
+		5B2B3DCA1B6DBFC000A7B169 /* dhry21a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhry21a.c; sourceTree = "<group>"; };
+		5B2B3DCB1B6DBFC000A7B169 /* dhry21b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhry21b.c; sourceTree = "<group>"; };
+		5B2B3DCC1B6DBFC000A7B169 /* timers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timers.c; sourceTree = "<group>"; };
 		5BDBFAD31B6072DB00FCBF87 /* Dhrystone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dhrystone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDBFAD71B6072DB00FCBF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BDBFAD81B6072DB00FCBF87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,21 +31,10 @@
 		5BDBFADE1B6072DB00FCBF87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5BDBFAE11B6072DB00FCBF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BDBFAE31B6072DB00FCBF87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5BDBFAE61B6072DB00FCBF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5BDBFAEC1B6072DB00FCBF87 /* DhrystoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhrystoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BDBFAF11B6072DB00FCBF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BDBFAF21B6072DB00FCBF87 /* DhrystoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DhrystoneTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5BDBFAD01B6072DB00FCBF87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BDBFAE91B6072DB00FCBF87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				5BDBFAD51B6072DB00FCBF87 /* Dhrystone */,
-				5BDBFAEF1B6072DB00FCBF87 /* DhrystoneTests */,
 				5BDBFAD41B6072DB00FCBF87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				5BDBFAD31B6072DB00FCBF87 /* Dhrystone.app */,
-				5BDBFAEC1B6072DB00FCBF87 /* DhrystoneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,13 +63,16 @@
 		5BDBFAD51B6072DB00FCBF87 /* Dhrystone */ = {
 			isa = PBXGroup;
 			children = (
+				5B2B3DC91B6DBFC000A7B169 /* dhry.h */,
+				5B2B3DCA1B6DBFC000A7B169 /* dhry21a.c */,
+				5B2B3DCB1B6DBFC000A7B169 /* dhry21b.c */,
+				5B2B3DCC1B6DBFC000A7B169 /* timers.c */,
 				5BDBFADA1B6072DB00FCBF87 /* AppDelegate.h */,
 				5BDBFADB1B6072DB00FCBF87 /* AppDelegate.m */,
 				5BDBFADD1B6072DB00FCBF87 /* ViewController.h */,
 				5BDBFADE1B6072DB00FCBF87 /* ViewController.m */,
 				5BDBFAE01B6072DB00FCBF87 /* Main.storyboard */,
 				5BDBFAE31B6072DB00FCBF87 /* Images.xcassets */,
-				5BDBFAE51B6072DB00FCBF87 /* LaunchScreen.xib */,
 				5BDBFAD61B6072DB00FCBF87 /* Supporting Files */,
 			);
 			path = Dhrystone;
@@ -98,23 +83,6 @@
 			children = (
 				5BDBFAD71B6072DB00FCBF87 /* Info.plist */,
 				5BDBFAD81B6072DB00FCBF87 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5BDBFAEF1B6072DB00FCBF87 /* DhrystoneTests */ = {
-			isa = PBXGroup;
-			children = (
-				5BDBFAF21B6072DB00FCBF87 /* DhrystoneTests.m */,
-				5BDBFAF01B6072DB00FCBF87 /* Supporting Files */,
-			);
-			path = DhrystoneTests;
-			sourceTree = "<group>";
-		};
-		5BDBFAF01B6072DB00FCBF87 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5BDBFAF11B6072DB00FCBF87 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -139,24 +107,6 @@
 			productReference = 5BDBFAD31B6072DB00FCBF87 /* Dhrystone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BDBFAEB1B6072DB00FCBF87 /* DhrystoneTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BDBFAF91B6072DB00FCBF87 /* Build configuration list for PBXNativeTarget "DhrystoneTests" */;
-			buildPhases = (
-				5BDBFAE81B6072DB00FCBF87 /* Sources */,
-				5BDBFAE91B6072DB00FCBF87 /* Frameworks */,
-				5BDBFAEA1B6072DB00FCBF87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BDBFAEE1B6072DB00FCBF87 /* PBXTargetDependency */,
-			);
-			name = DhrystoneTests;
-			productName = DhrystoneTests;
-			productReference = 5BDBFAEC1B6072DB00FCBF87 /* DhrystoneTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +118,6 @@
 				TargetAttributes = {
 					5BDBFAD21B6072DB00FCBF87 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					5BDBFAEB1B6072DB00FCBF87 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 5BDBFAD21B6072DB00FCBF87;
 					};
 				};
 			};
@@ -189,7 +135,6 @@
 			projectRoot = "";
 			targets = (
 				5BDBFAD21B6072DB00FCBF87 /* Dhrystone */,
-				5BDBFAEB1B6072DB00FCBF87 /* DhrystoneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,15 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDBFAE21B6072DB00FCBF87 /* Main.storyboard in Resources */,
-				5BDBFAE71B6072DB00FCBF87 /* LaunchScreen.xib in Resources */,
 				5BDBFAE41B6072DB00FCBF87 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BDBFAEA1B6072DB00FCBF87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,29 +156,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2B3DCE1B6DBFC000A7B169 /* dhry21b.c in Sources */,
+				5B2B3DCF1B6DBFC000A7B169 /* timers.c in Sources */,
 				5BDBFADF1B6072DB00FCBF87 /* ViewController.m in Sources */,
+				5B2B3DCD1B6DBFC000A7B169 /* dhry21a.c in Sources */,
 				5BDBFADC1B6072DB00FCBF87 /* AppDelegate.m in Sources */,
 				5BDBFAD91B6072DB00FCBF87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BDBFAE81B6072DB00FCBF87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BDBFAF31B6072DB00FCBF87 /* DhrystoneTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5BDBFAEE1B6072DB00FCBF87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BDBFAD21B6072DB00FCBF87 /* Dhrystone */;
-			targetProxy = 5BDBFAED1B6072DB00FCBF87 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5BDBFAE01B6072DB00FCBF87 /* Main.storyboard */ = {
@@ -250,14 +174,6 @@
 				5BDBFAE11B6072DB00FCBF87 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5BDBFAE51B6072DB00FCBF87 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BDBFAE61B6072DB00FCBF87 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -327,6 +243,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -346,6 +263,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dhrystone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,42 +274,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dhrystone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5BDBFAFA1B6072DB00FCBF87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DhrystoneTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dhrystone.app/Dhrystone";
-			};
-			name = Debug;
-		};
-		5BDBFAFB1B6072DB00FCBF87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DhrystoneTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dhrystone.app/Dhrystone";
 			};
 			name = Release;
 		};
@@ -414,14 +299,7 @@
 				5BDBFAF81B6072DB00FCBF87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		5BDBFAF91B6072DB00FCBF87 /* Build configuration list for PBXNativeTarget "DhrystoneTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BDBFAFA1B6072DB00FCBF87 /* Debug */,
-				5BDBFAFB1B6072DB00FCBF87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
