@@ -6,6 +6,14 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.resView setText:[NSString stringWithCString:
+                           "Compiled with "
+#ifdef __clang__
+                           "clang version " __clang_version__
+#elif defined(__GNUC__)
+                           "GCC version " __VERSION__
+#endif
+                                             encoding:NSASCIIStringEncoding]];
 }
 
 - (void)didReceiveMemoryWarning {
