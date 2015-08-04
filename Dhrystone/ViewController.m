@@ -22,11 +22,11 @@
 }
 
 -(IBAction) runPressed: (id)sender {
-	if(!OSAtomicCompareAndSwapIntBarrier(0,1,&dhryRunning)) { return; }
 	[self.nrunsField resignFirstResponder]; // hide keyboard
-	self.runButton.enabled=NO;
 	int n=[[self.nrunsField text] intValue];
 	if(n>0) {
+		if(!OSAtomicCompareAndSwapIntBarrier(0,1,&dhryRunning)) { return; }
+		self.runButton.enabled=NO;
 		NSNumber *nruns=[NSNumber numberWithInt:n];
 		[NSThread detachNewThreadSelector:@selector(dhryThreadWithNRuns:) toTarget:self withObject:nruns];
 	}
