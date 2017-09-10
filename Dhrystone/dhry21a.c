@@ -148,7 +148,7 @@ dhrymain (long num_runs,char *buf, char *buf_end)
 /*
   if (Reg)
   {
-    buf+=dhry_printf(buf,buf_end-buf,"Program compiled with 'register' attribute\n");
+    buf+=dhry_printf(buf,buf_end-buf,"Select the number of loops Dhrystone Benchmark should complete e.g 100 million this has been compiled with 'register' attribute\n");
     buf+=dhry_printf(buf,buf_end-buf,"\n");
   }
   else
@@ -182,6 +182,7 @@ dhrymain (long num_runs,char *buf, char *buf_end)
       /* Ch_1_Glob == 'A', Ch_2_Glob == 'B', Bool_Glob == true */
     Int_1_Loc = 2;
     Int_2_Loc = 3;
+    Int_3_Loc = 7;
     strcpy (Str_2_Loc, "DHRYSTONE PROGRAM, 2'ND STRING");
     Enum_Loc = Ident_2;
     Bool_Glob = ! Func_2 (Str_1_Loc, Str_2_Loc);
